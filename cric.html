@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Score</title>
+        <style>
+
+            h1{text-align:center}
+        body{
+            border: 2px outset darkgray;
+            text-align: center;
+            background-image: url("cric2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       }
+       .iframe{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       }
+       .info{
+            border: 2px outset darkgray;
+            text-align: center;
+        }
+        .cricket{
+            border: 2px outset darkgray;
+            text-align: center;
+            background-image: url("cric.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .football{
+            border: 2px outset darkgray;
+            text-align: center;
+            background-image: url("football.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .basketball{
+            border: 2px outset darkgray;
+            text-align: center;
+            background-image: url("basketball.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .hockey{
+            border: 2px outset darkgray;
+            text-align: center;
+            background-image: url("hockey.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="info">
+        <h1 style="color: indianred;">Live Matches Score</h1>
+        <img src="cric1.jpg" alt="cricket" class="center" style="width:50px;height:60px;">        
+        </div>
+
+        <div class="cricket">
+            <h2 style="color: rgb(196, 73, 25);">Live Cricket Matches</h2>
+            <iframe src="https://widget.crictimes.org/" class="center" style="width:450px;min-height: 460px;" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div class="football">
+            <h2 style="color: rgb(196, 25, 34);">Live Football Matches</h2>
+            <div id="aiscore-free"></div><script language="javascript">document.getElementById("aiscore-free").innerHTML="<iframe src='https://www.aiscore.com?width=1200&theme=blue'  height='100%' width='1200' scrolling='auto' border='0' frameborder='0'></iframe>";</script><style>body{margin:0}#aiscore-free{display:flex;justify-content:center;height:100vh}</style>
+        </div>
+
+        <div class="basketball">
+            <h2 style="color: rgb(219, 14, 100);">Live Basketball Matches</h2>
+            <iframe frameborder="0" width="100%" height="263px" src="http://www.fiba.basketball/fibacarousel/index.html?event=208248&lng=en" scrolling="no" border="0" ></iframe>
+        </div>
+
+        
+    </body>
+</html>
